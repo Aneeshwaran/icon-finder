@@ -134,9 +134,9 @@ p {
 }
 }
 .results img {
-    width: 100px;
-    height: 100px;
-    margin: 30px;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
 }
 .sea:focus {
     border: none;
@@ -165,7 +165,7 @@ p {
 .results {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0 auto;
