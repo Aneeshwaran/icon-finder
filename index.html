@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Finder</title>
+    <link rel="icon" href="img/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo" download></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtop">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navtop">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Freeicons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Premium</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link other-items" href="#">Login</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link sign-btn" href="#">Sign up free</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid gap content">
+        <div class="row text-center gap">
+            <div class="col-12">
+                <h3 class="display-4 gap">
+                    Access +5.2M Vector icons & stickers
+                </h3>
+                <p class="lead">
+                    Download Free Vector Icons And stickers for your projects.Resources Made by And for
+                </p>
+                <p class="lead line-2">designers.PNG,SVG,EPS,PSD And BASE 64 formats.
+                </p>
+                <center>
+                    <form id="search" class="col-6 search-area  gap">
+                        <input type="text" class=" col-8 form-control" id="query" name="query" placeholder="Search for icons..." autofocus>
+                        <button class="sea" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </center>
+                <label><input type="checkbox" name="premium" value="1"> Premium only</label>
+                <label><input type="checkbox" name="vector" value="1"> Vector only</label>
+                <p class="lead small-p">Popular Searches:Instagram, Facebook, Arrow, Phone, Youtube, search, user, summer</p>
+            </div>
+        </div>
+
+        <div class="results hide">
+
+
+            <div class="diagram">
+                <div class="placeholder" id="figure-1"></div>
+                <div class="placeholder" id="figure-2"></div>
+                <div class="placeholder" id="figure-3"></div>
+                <div class="placeholder" id="figure-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/template" id="result-template">
+        <a download="{{ url }}" href="{{ url }}" target="_blank">
+            <img src="{{ url }}" alt="" width="64" data-icon-id="{{ icon_id }}">
+        </a>
+    </script>
+
+    <script type="text/template" id="log-template">
+        <h4>Request:</h4>
+        <pre>{{ type }} {{ url }}</pre>
+        <h4>Response:</h4>
+        <pre>{{- response }}</pre>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
