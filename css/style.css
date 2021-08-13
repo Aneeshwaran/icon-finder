@@ -133,7 +133,11 @@ p {
     margin: 4px;
 }
 }
-
+.results img {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+}
 .sea:focus {
     border: none;
     outline: none;
@@ -167,11 +171,7 @@ p {
     margin: 0 auto;
 }
 
-.results img {
-    width: 100px;
-    height: 100px;
-    margin: 30px;
-}
+
 
 .results img:hover {
     transform: scale(1.2);
